@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+<body>
+<h2>Assignment: </h2>
+<p>Using the same array, display the even numbers and the odd numbers should be the same</p>
+<p>//Expected output: [1,4,3,8]</p>
+
+    <script type="text/javascript">
+        //ASSIGNMENT: 
+        //same array, double the even numbers and leave the odd numbers the same
+        //Output: [1,4,3,8]
+        //can use ternary or if else
+
+        array1 = [1,2,3,4];
+
+        array = array1.map(num => {
+            let even = 0;
+            if(num % 2 == 0) {
+                even = num * 2
+            } else {
+                even = num
+            }
+            document.write(even + ' ');
+        })
+        
+
+                
+    </script>
+</body>
+</html>
