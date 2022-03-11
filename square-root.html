@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the square root of a number</title>
+    <style>
+        form {
+            max-width: 35%;
+            margin: auto;
+        }
+        button {
+            padding: 0.5em 2em;
+            border-radius: 1em;
+            margin: 2em 1em;
+            font-size: large;
+            background-color: #5C3D2E;
+            color: #E0C097;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <h1>Click on a number to find its square: </h1>
+        <button id="sqrt" onclick="squareRoot(1)"> 1 </button>
+        <button id="sqrt" onclick="squareRoot(2)"> 2 </button>
+        <button id="sqrt" onclick="squareRoot(3)"> 3 </button>
+        <button id="sqrt" onclick="squareRoot(4)"> 4 </button>
+        <button id="sqrt" onclick="squareRoot(5)"> 5 </button>
+        <button id="sqrt" onclick="squareRoot(6)"> 6 </button>
+        <button id="sqrt" onclick="squareRoot(7)"> 7 </button>
+        <button id="sqrt" onclick="squareRoot(8)"> 8 </button>
+        <button id="sqrt" onclick="squareRoot(9)"> 9 </button>
+        <button id="sqrt" onclick="squareRoot(10)"> 10 </button>
+        <button id="sqrt" onclick="squareRoot(11)"> 11 </button>
+        <button id="sqrt" onclick="squareRoot(12)"> 12 </button>
+    </form>
+
+    <script type="text/javascript">
+        function squareRoot(num) {
+            result = num * num;
+            alert(`The square root of the number you clicked is ${result}`);
+        }
+
+    </script>
+</body>
+</html>
