@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM Examples</h2>
+    <p id="demo"></p>
+
+    <script>
+        //Sample of Object Literal
+        let person = {firstName: "Juan", lastName: "Cruz", age: 30, gender: "Male", "likes singing": true};
+        //document.getElementById("demo").innerHTML = person.firstName;
+        //document.getElementById("demo").innerHTML = `${person.firstName} is ${person.age} years old.`
+
+        let person2 = {} //using empty object
+            person2.firstName = "John";
+            person2.middleName = "Dela";
+            person2.lastName = "Cruz"; 
+            person2.age = 50;
+            //document.getElementById("demo").innerHTML = `${person2.firstName} ${person2.middleName} ${person2.lastName} is ${person2.age} years old.`
+
+        //using object instance
+        let person3 = new Object();
+            person3.firstName = "Pedro";
+            person3.middleName = "Delos";
+            person3.lastName = "Santos";
+            person3.age = 48;
+            //document.getElementById("demo").innerHTML = `${person3.firstName} ${person3.middleName} ${person3.lastName} is ${person3.age} years old.`
+
+        //delete opeartor
+        delete person3.age;
+        //document.getElementById("demo").innerHTML = `${person3.firstName} ${person3.middleName} ${person3.lastName} is ${person3.age} years old.`
+
+        //alert(person["likes singing"]);
+        delete person["likes singing"];
+        
+        //object constructor
+        function person4(firstName,middleName,lastName,age,interest) {
+            this.firstName = firstName;
+            this.middleName = middleName;
+            this.lastName = lastName;
+            this.age = age;
+            this.interest = interest;
+            this.name = {
+                "fName": firstName,
+                "lName": lastName
+            }
+            this.greetings = function() {
+                //alert(`Hello ${teacher1.firstName} ${teacher1.lastName}`);
+            }
+            this.bio = function() {
+                alert(`${this.name.fName} ${this.name.lName} likes ${this.interest}`);
+            }
+        }
+        //create new instances of person4 object
+        let teacher1 = new person4("Peter","Piper","Parker",30);
+        let teacher2 = new person4("Pamela","Amor","Astorga",35);
+        document.getElementById("demo").innerHTML = `Our teachers are ${teacher1.firstName} ${teacher1.lastName}  and ${teacher2.firstName} ${teacher2.lastName}`;
+
+        let teacher3 = new person4("Andres","Cruz","Bonifacio",29,['fishing','travelling', 'biking']);
+        teacher3.greetings();
+        teacher3.bio();
+        //andres bonifacio likes fishing and travelling
+
+    </script>
+</body>
+</html>

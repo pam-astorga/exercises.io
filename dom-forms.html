@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of DOM Forms</title>
+</head>
+<body>
+    <form name="myForm">
+        <label for="">Text in a box</label>
+        <input type="text" name="inputBox" id="">
+        <input type="button" value="Click" name="button1" onclick="clickResult(this.form)">
+        <input type="button" value="Read" name="button2" onclick="readText(this.form)">
+        <input type="button" value="Write" name="button3" onclick="writeText(this.form)">
+        <p>
+            <input type="radio" name="radbtn" id="" value="radbtn1">Radio Button 1
+            <input type="radio" name="radbtn" id="" value="radbtn2">Radio Button 2
+            <input type="radio" name="radbtn" id="" value="radbtn3">Radio Button 3
+            <input type="button" value="Click radio button" name="radButton" onclick="testButton(this.form)">
+        </p>
+        <p>
+            <input type="checkbox" name="accept" id="accept">Accept the Terms and Agreement
+            <button type="button" id="btn">Submit</button>
+        </p>
+        <p>Checkboxes: Checkbox Toggle</p>
+            <input type="checkbox" name="selectCheck" id="" onclick="toggle(this.form)">Select All
+            <input type="checkbox" name="selectCheck" id="" value="Check1">Check 1
+            <input type="checkbox" name="selectCheck" id="" value="Check2">Check 2
+            <input type="checkbox" name="selectCheck" id="" value="Check3">Check 3
+            <input type="checkbox" name="selectCheck" id="" value="Check4">Check 4
+    </form>
+
+    <script type="text/javascript" src="js/dom-forms.js"></script>
+</body>
+</html>

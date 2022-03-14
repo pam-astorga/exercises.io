@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {max-width: 300px;}
+        .boxform {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Select JS Framework</label>
+            <select name="" id="mySelect">
+                <option value="1">Angular</option>
+                <option value="2" selected>ReactJS</option>
+                <option value="3">VueJS</option>
+                <option value="4">EmberJS</option>
+            </select><br><br>
+        <button id="btnJS">Get the selected index</button><br>
+        <button id="btnJS2">Display the selected index value</button><br><br>
+
+        <label for="">Select programming languages</label>
+        <select name="" id="prog" multiple>
+            <option value="C">C</option>
+            <option value="Php">Php</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby on Rails</option>
+            <option value="Java">Java</option>
+        </select><br>
+        <button id="submit1">Select using For of Loop</button>
+        <button id="submit2">Select using querySelectorAll</button>
+        <button id="submit3">Select using Options property</button>
+        <button id="submit4">Select using Filter and Map method</button>
+    </form>
+
+    <h2>Creating a new node</h2>
+    <ul class="menu"></ul>
+
+    <h2>List of Fruits</h2>
+    <ul id="fruits">
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+    <label> Fruits</label>
+    <input type="text" name="fruits" id="prutas">
+    <label>Quantity</label>
+    <input type="number" name="quantity" id="quantity">
+    <button id="btnFruits">Add Fruits</button>
+
+    <h2>Example of DOM toggles</h2>
+    <button id="btn-register">Click to register</button><br>
+    <div id="reg-div">
+        <form>
+            <label for="">Username</label>
+            <input type="text" name="username" id="">
+            <label for="">Password</label>
+            <input type="text" name="password" id="">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis totam beatae maxime optio officiis praesentium quasi labore aperiam nostrum. Corrupti voluptatem eum, dignissimos nam eius placeat temporibus maiores inventore hic.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+        <script type="text/javascript" src="js/dom.js"></script>
+</body>
+</html>
