@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storing Form Data in Objects</title>
+</head>
+<body>
+    <h1>Storing Form Data in Local Storage</h1>
+    <form id="reviewForm">
+        <label>Movie Title </label>
+        <input type="text" name="title" id="title" required><br>
+
+        <label>Year Shown </label>
+        <input type="number" name="year-shown" id="year-shown" required><br>
+
+        <label>Review</label><br>
+        <textarea name="review" id="review" cols="35" rows="10" required></textarea><br><br><br>
+
+        <button id="addReview" name="addReview">Add Review</button>
+        <button id="retrievebtn">Retrieve from Local Storage</button>
+    </form>
+    <div id="display">
+        <pre>
+            
+        </pre>
+    </div>
+
+    <table id="tablereview" style="width: 80%; border: 2px solid black;">
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Title</th>
+            <th>Year Shown</th>
+            <th>Review</th>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="js/moviereviews.js"></script>
+</body>
+</html>

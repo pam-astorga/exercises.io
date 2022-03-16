@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Form Validation</title>
+    <style> 
+        small {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Registration</h2>
+        <form id="registration">
+            <small id="error-username"></small> <br>
+            <small id="error-email"></small> <br>
+            <small id="error-password"></small> <br>
+            <small id="error-confirm"></small> <br>
+            <br>
+            <label>Username: </label>
+            <input type="text" name="username" id="username" placeholder="Username"><br><br>
+            
+
+            <label>Email: </label>
+            <input type="text" name="email" id="email" placeholder="email@email.com"><br><br>
+
+            <label>Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password"><br><br>
+
+            <label>Confirm Password: </label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"><br><br><br>
+
+            <input type="submit" name="submit" value="Sign-up" id="signup">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/form-validation.js"></script>
+</body>
+</html>
